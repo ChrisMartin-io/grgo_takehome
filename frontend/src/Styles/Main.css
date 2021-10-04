@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.autocomplete {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+  color: palevioletred;
+}
+
+.sub-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+}
+
+.buttons {
+  align-self: start;
+}
+
+.box {
+  min-width: 300px;
+  max-height: 400px;
+  max-width: 1000px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  cursor: pointer;
+}
+
+.bottom-box {
+  max-height: 250px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+table {
+  text-align: 'left';
+  border: 1px solid black;
+  min-width: 300px;
+}
+td {
+  border: 1px solid black;
+  border-top: 0;
+  border-left: 0;
+}
