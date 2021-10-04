@@ -4,7 +4,9 @@
 ## **Overview**
 Sample library app, built on Postgres database with Flask on the back end and React on the front end. Data set is Amazon top 50 bestselling book 2009-2019, found here: https://www.kaggle.com/sootersaalu/amazon-top-50-bestselling-books-2009-2019.
 
-Demo video here
+--
+
+In case it might be helpful, I've recorded a demo video of installation and functionality. [Demo video here](https://drive.google.com/drive/u/0/folders/1_IzMp2VkqZmfBAqprpigbLxVzUGuT0iO)
 
 ## **Contents**
 * [Directory Index](#directory-index)
@@ -14,30 +16,22 @@ Demo video here
 
 ## **Directory Index**
 ```
-gr_takehome/
 ├── README.md
 ├── backend
-│   ├── Take\ Home\ Options.pdf
 │   ├── app.py
 │   ├── books2.csv
 │   ├── db.py
 │   ├── models.py
 │   └── requirements.txt
 └── frontend
-    ├── README.md
-    ├── package-lock.json
     ├── package.json
     ├── public
-    │   ├── favicon.ico
     │   ├── index.html
-    │   ├── logo192.png
-    │   ├── logo512.png
     │   ├── manifest.json
     │   └── robots.txt
     ├── src
     │   ├── App.css
     │   ├── App.js
-    │   ├── App.test.js
     │   ├── Components
     │   │   ├── AutoComplete.js
     │   │   ├── Books.js
@@ -52,12 +46,11 @@ gr_takehome/
     │   ├── Styles
     │   │   └── Main.css
     │   ├── Tests
+    │   │   ├── App.test.js
     │   │   └── Main.test.js
     │   ├── index.css
     │   ├── index.js
-    │   ├── logo.svg
-    │   ├── reportWebVitals.js
-    │   └── setupTests.js
+    │   └── reportWebVitals.js
     └── yarn.lock
 ```
 
@@ -142,7 +135,7 @@ Ran all test suites.
 ✨  Done in 2.48s.
 ```
 ## **Project Details**
-Below are some details of the project. I made a quick video demo of the installation and functionality as well.
+ To reserve a book, you can search for it first, or use the autocomplete box. Each action pulls directly from the database. Then click on the user and book to reserve, and click borrow. To return a book, highlight the book in the Borrowed Books box, and click return. 
 ### Database
 3 tables:
 * **books** - contains all books and additional info (ie year, reviews, genre)
@@ -164,4 +157,14 @@ Below are some details of the project. I made a quick video demo of the installa
   * **DELETE '/borrow'** - remove existing entry of borrowed book
 
  ### Front End
- To reserve a book, you can search for it first, or use the autocomplete box. Each action pulls directly from the database. 
+* **Main.js** - main window render
+  * **Functional Components**:
+    * **Books.js** - Displays books from db, either all books or narrowed by search / autocomplete
+    * **Users.js** - Displays users from db
+    * **BorrowedBooks** - Displays borrowed books from db
+    * **Search** - Search bar, updates Books component from db on state change for any book containing term
+    * **Autocomplete** - Autocomplete bar, updates Books component on state change, displays autocomplete text
+  * **Interface Components**:
+    * **Button.js** - used for Borrow and Return
+    * **Input.js** - used for Search and Autocomplete
+    * **Table.js** - used for Books, Users, BorrowedBooks
