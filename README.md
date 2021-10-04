@@ -2,12 +2,11 @@
 # Grabango exercise
 
 ## **Overview**
-Sample library app, built on Postgres database with Flask on the back end and React on the front end. Data set is Amazon top 50 bestselling book 2009-2019, found here: https://www.kaggle.com/sootersaalu/amazon-top-50-bestselling-books-2009-2019.
+Sample library app, built on Postgres database with Flask & SQLAlchemy on the back end and React on the front end. Data set is Amazon top 50 bestselling books 2009-2019, found here: https://www.kaggle.com/sootersaalu/amazon-top-50-bestselling-books-2009-2019.
 
 --
 
-In case it might be helpful, I've recorded a demo video of installation and functionality. [Demo video here](https://drive.google.com/drive/u/0/folders/1_IzMp2VkqZmfBAqprpigbLxVzUGuT0iO)
-
+In case it might be helpful, I've recorded a demo video of installation and functionality. [Demo video here](https://vimeo.com/622656058)
 ## **Contents**
 * [Directory Index](#directory-index)
 * [Installation](#installation)
