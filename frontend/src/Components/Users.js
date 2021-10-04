@@ -1,4 +1,6 @@
 
+// Display users
+// Selectable 
 import React from 'react';
 import Table from './Interface/Table'
 import '../Styles/Main.css';

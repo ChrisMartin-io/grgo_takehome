@@ -1,7 +1,9 @@
+
+// Table render for Books, BorrowedBooks, Users
 import { useTable } from 'react-table'
 import React from 'react';
 
-function Table({ columns, data, setStatus, borrowedPath }) {
+function Table({ columns, data, setStatus }) {
   
   const [selected, setSelected] = React.useState(-1)
   const {
@@ -15,7 +17,6 @@ function Table({ columns, data, setStatus, borrowedPath }) {
     data,
   })
   const handleClick = (id) => {
-    console.log('click', id)
     setSelected(id)
     setStatus(id)
   }

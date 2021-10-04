@@ -1,7 +1,8 @@
 
 // set table columns and data
 // render data
-
+// if using Autocomplete or Search, data updated
+// Selectable
 import React from 'react';
 import '../Styles/Main.css';
 import Table from './Interface/Table'

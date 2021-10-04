@@ -1,6 +1,8 @@
+
+// Search bar
+// Pass current value to main state
 import Input from './Interface/Input'
 import React from 'react';
-import Button from './Interface/Button'
 
 function Search(props) {
   const [currentSearch, setCurrentSearch] = React.useState('')

@@ -1,7 +1,9 @@
 
+// Autocomplete bar
+// pass state of bar value to Main
+// Autofill with data props
 import React from 'react';
 import { Hint } from 'react-autocomplete-hint'
-import Input from './Interface/Input'
 
 const AutoComplete = (props) => {
   const [hintData, setHintData] = React.useState([])
@@ -14,7 +16,7 @@ const AutoComplete = (props) => {
       result.push(item.title)
     }
     setHintData(result)
-  }, [])
+  }, []) 
 
   const handleAutoCompleteChange = (event) => {
     setCurrentText(event.target.value)

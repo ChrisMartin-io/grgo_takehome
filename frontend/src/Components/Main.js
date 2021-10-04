@@ -12,11 +12,9 @@ import AutoComplete from './AutoComplete';
 const ServerUrl = 'http://localhost:5000'
 
 const Main = () => {
-
   const [user, setUser] = React.useState(-1)
   const [book, setBook] = React.useState(-1)
   const [borrowedBook, setBorrowedBook] = React.useState(-1)
-  const [cantBorrow, setCantBorrow] = React.useState([])
 
   const [users, setUsers] = React.useState(null)
   const [books, setBooks] = React.useState(null)
@@ -43,6 +41,7 @@ const Main = () => {
 
   // main
   else {
+    // search bar handler
     const handleSearchBar = async (str) => {
       setAutoComplete('')
       if (str) {
@@ -53,7 +52,8 @@ const Main = () => {
         setBooks(newBooks.data)
       }
     }
-
+    
+    // auto complete handler
     const handleAutoComplete = async (str) => {
       setSearch('')
       if (str) {
