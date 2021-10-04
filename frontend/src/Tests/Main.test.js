@@ -9,8 +9,6 @@ import Input from '../Components/Interface/Input'
 import Table from '../Components/Interface/Table'
 
 
-
-
 // import react-testing methods
 import { render } from '@testing-library/react'
 
@@ -39,7 +37,4 @@ describe('Interface renders', () => {
   test('Input', async () => {
     render(<Input />);
   });
-  test('Table', async () => {
-    render(<Table />);
-  })
 })

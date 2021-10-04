@@ -12,6 +12,8 @@ app.config['SQLALCHEMY_ECHO'] = True
 
 connect_db(app)
 @cross_origin()
+
+# hello world
 @app.route('/')
 def hello_world():
     return jsonify('hello world')

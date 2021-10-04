@@ -2,7 +2,6 @@ import { useTable } from 'react-table'
 import React from 'react';
 
 function Table({ columns, data, setStatus, borrowedPath }) {
-  if (!data) return <div>loading</div>
   
   const [selected, setSelected] = React.useState(-1)
   const {
